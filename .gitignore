@@ -1,0 +1,3 @@
+resources/public/js/compiled/devcards_out
+target
+figwheel_server.log

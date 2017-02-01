@@ -40,18 +40,12 @@
                                     :source-map-timestamp true }}
                        {:id "dev"
                         :source-paths ["src"]
-                        :figwheel true
+                        :figwheel false
                         :compiler {:main       "presentation.core"
-                                   :asset-path "js/compiled/out"
-                                   :output-to  "resources/public/js/compiled/presentation.js"
-                                   :output-dir "resources/public/js/compiled/out"
-                                   :source-map-timestamp true }}
-                       {:id "prod"
-                        :source-paths ["src"]
-                        :compiler {:main       "presentation.core"
-                                   :asset-path "js/compiled/out"
-                                   :output-to  "resources/public/js/compiled/presentation.js"
-                                   :optimizations :advanced}}]}
+                                   :asset-path "site/out"
+                                   :output-to  "site/presentation.js"
+                                   :output-dir "site/out"
+                                   :source-map-timestamp true }}]}
 
   :figwheel { :css-dirs ["resources/public/css"] }
 

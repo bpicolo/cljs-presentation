@@ -27,20 +27,20 @@ return shifted;
 cljs.source_map.base64_vlq.encode_val = (function cljs$source_map$base64_vlq$encode_val(n){
 var sb = (new goog.string.StringBuffer());
 var vlq = cljs.source_map.base64_vlq.to_vlq_signed.call(null,n);
-var digit_28373 = (vlq & cljs.source_map.base64_vlq.vlq_base_mask);
-var vlq_28374__$1 = (vlq >>> cljs.source_map.base64_vlq.vlq_base_shift);
+var digit_32506 = (vlq & cljs.source_map.base64_vlq.vlq_base_mask);
+var vlq_32507__$1 = (vlq >>> cljs.source_map.base64_vlq.vlq_base_shift);
 while(true){
-if((vlq_28374__$1 > (0))){
-var digit_28375__$1 = (digit_28373 | cljs.source_map.base64_vlq.vlq_continuation_bit);
-sb.append(cljs.source_map.base64.encode.call(null,digit_28375__$1));
+if((vlq_32507__$1 > (0))){
+var digit_32508__$1 = (digit_32506 | cljs.source_map.base64_vlq.vlq_continuation_bit);
+sb.append(cljs.source_map.base64.encode.call(null,digit_32508__$1));
 
-var G__28376 = (vlq_28374__$1 & cljs.source_map.base64_vlq.vlq_base_mask);
-var G__28377 = (vlq_28374__$1 >>> cljs.source_map.base64_vlq.vlq_base_shift);
-digit_28373 = G__28376;
-vlq_28374__$1 = G__28377;
+var G__32509 = (vlq_32507__$1 & cljs.source_map.base64_vlq.vlq_base_mask);
+var G__32510 = (vlq_32507__$1 >>> cljs.source_map.base64_vlq.vlq_base_shift);
+digit_32506 = G__32509;
+vlq_32507__$1 = G__32510;
 continue;
 } else {
-sb.append(cljs.source_map.base64.encode.call(null,digit_28373));
+sb.append(cljs.source_map.base64.encode.call(null,digit_32506));
 }
 break;
 }
@@ -68,12 +68,12 @@ var digit__$1 = (digit & cljs.source_map.base64_vlq.vlq_base_mask);
 var result__$1 = (result + (digit__$1 << shift));
 var shift__$1 = (shift + cljs.source_map.base64_vlq.vlq_base_shift);
 if(continuation_QMARK_){
-var G__28378 = i__$1;
-var G__28379 = result__$1;
-var G__28380 = shift__$1;
-i = G__28378;
-result = G__28379;
-shift = G__28380;
+var G__32511 = i__$1;
+var G__32512 = result__$1;
+var G__32513 = shift__$1;
+i = G__32511;
+result = G__32512;
+shift = G__32513;
 continue;
 } else {
 return (new cljs.core.LazySeq(null,((function (i,result,shift,i__$1,continuation_QMARK_,digit__$1,result__$1,shift__$1,digit,l){
@@ -91,5 +91,3 @@ return cljs$source_map$base64_vlq$decode.call(null,s__$1);
 break;
 }
 });
-
-//# sourceMappingURL=base64_vlq.js.map

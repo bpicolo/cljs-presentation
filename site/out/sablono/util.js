@@ -66,14 +66,14 @@ throw cljs.core.missing_protocol.call(null,"ToURI.to-uri",x);
  */
 sablono.util.as_str = (function sablono$util$as_str(var_args){
 var args__26133__auto__ = [];
-var len__26126__auto___37287 = arguments.length;
-var i__26127__auto___37288 = (0);
+var len__26126__auto___41420 = arguments.length;
+var i__26127__auto___41421 = (0);
 while(true){
-if((i__26127__auto___37288 < len__26126__auto___37287)){
-args__26133__auto__.push((arguments[i__26127__auto___37288]));
+if((i__26127__auto___41421 < len__26126__auto___41420)){
+args__26133__auto__.push((arguments[i__26127__auto___41421]));
 
-var G__37289 = (i__26127__auto___37288 + (1));
-i__26127__auto___37288 = G__37289;
+var G__41422 = (i__26127__auto___41421 + (1));
+i__26127__auto___41421 = G__41422;
 continue;
 } else {
 }
@@ -90,8 +90,8 @@ return cljs.core.apply.call(null,cljs.core.str,cljs.core.map.call(null,sablono.u
 
 sablono.util.as_str.cljs$lang$maxFixedArity = (0);
 
-sablono.util.as_str.cljs$lang$applyTo = (function (seq37286){
-return sablono.util.as_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq37286));
+sablono.util.as_str.cljs$lang$applyTo = (function (seq41419){
+return sablono.util.as_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq41419));
 });
 
 /**
@@ -99,12 +99,12 @@ return sablono.util.as_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.ca
  */
 sablono.util.camel_case = (function sablono$util$camel_case(k){
 if(((k instanceof cljs.core.Keyword)) || (typeof k === 'string') || ((k instanceof cljs.core.Symbol))){
-var vec__37293 = clojure.string.split.call(null,cljs.core.name.call(null,k),/-/);
-var seq__37294 = cljs.core.seq.call(null,vec__37293);
-var first__37295 = cljs.core.first.call(null,seq__37294);
-var seq__37294__$1 = cljs.core.next.call(null,seq__37294);
-var first_word = first__37295;
-var words = seq__37294__$1;
+var vec__41426 = clojure.string.split.call(null,cljs.core.name.call(null,k),/-/);
+var seq__41427 = cljs.core.seq.call(null,vec__41426);
+var first__41428 = cljs.core.first.call(null,seq__41427);
+var seq__41427__$1 = cljs.core.next.call(null,seq__41427);
+var first_word = first__41428;
+var words = seq__41427__$1;
 if((cljs.core.empty_QMARK_.call(null,words)) || (cljs.core._EQ_.call(null,"aria",first_word)) || (cljs.core._EQ_.call(null,"data",first_word))){
 return k;
 } else {
@@ -121,11 +121,11 @@ sablono.util.camel_case_keys = (function sablono$util$camel_case_keys(m){
 if(cljs.core.map_QMARK_.call(null,m)){
 var ks = cljs.core.keys.call(null,m);
 var kmap = cljs.core.zipmap.call(null,ks,cljs.core.map.call(null,sablono.util.camel_case,ks));
-var G__37297 = clojure.set.rename_keys.call(null,m,kmap);
+var G__41430 = clojure.set.rename_keys.call(null,m,kmap);
 if(cljs.core.map_QMARK_.call(null,new cljs.core.Keyword(null,"style","style",-496642736).cljs$core$IFn$_invoke$arity$1(m))){
-return cljs.core.update_in.call(null,G__37297,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"style","style",-496642736)], null),sablono$util$camel_case_keys);
+return cljs.core.update_in.call(null,G__41430,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"style","style",-496642736)], null),sablono$util$camel_case_keys);
 } else {
-return G__37297;
+return G__41430;
 }
 } else {
 return m;
@@ -148,11 +148,11 @@ return clojure.set.rename_keys.call(null,sablono.util.camel_case_keys.call(null,
  * Join the `classes` with a whitespace.
  */
 sablono.util.join_classes = (function sablono$util$join_classes(classes){
-return clojure.string.join.call(null," ",cljs.core.flatten.call(null,cljs.core.map.call(null,(function (p1__37298_SHARP_){
-if(typeof p1__37298_SHARP_ === 'string'){
-return p1__37298_SHARP_;
+return clojure.string.join.call(null," ",cljs.core.flatten.call(null,cljs.core.map.call(null,(function (p1__41431_SHARP_){
+if(typeof p1__41431_SHARP_ === 'string'){
+return p1__41431_SHARP_;
 } else {
-return cljs.core.seq.call(null,p1__37298_SHARP_);
+return cljs.core.seq.call(null,p1__41431_SHARP_);
 
 }
 }),classes)));
@@ -225,5 +225,3 @@ return x__$1;
 (sablono.util.to_uri["_"] = (function (x){
 return (new goog.Uri([cljs.core.str(x)].join('')));
 }));
-
-//# sourceMappingURL=util.js.map

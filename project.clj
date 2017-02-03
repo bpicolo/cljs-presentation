@@ -40,11 +40,12 @@
                                     :source-map-timestamp true }}
                        {:id "dev"
                         :source-paths ["src"]
-                        :figwheel false
                         :compiler {:main       "presentation.core"
                                    :asset-path "site/out"
                                    :output-to  "site/presentation.js"
                                    :output-dir "site/out"
+                                   :optimizations :simple
+                                   :devcards true
                                    :source-map-timestamp true }}]}
 
   :figwheel { :css-dirs ["resources/public/css"] }

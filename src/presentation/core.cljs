@@ -4,6 +4,8 @@
     [presentation.basics]
     [presentation.collections]))
 
+(set! (. js/cljs -user) #js {})
+
 (enable-console-print!)
 
 (defn ^:export main []

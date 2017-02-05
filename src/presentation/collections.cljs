@@ -1,14 +1,16 @@
 (ns presentation.collections
   (:require
     [reagent.core :as reagent :refer [atom]]
-    [presentation.utils :refer [code-block eval-str]])
+    [presentation.utils :refer [code-block eval-str img]])
   (:require-macros
    [devcards.core :as dc :refer [defcard-rg defcard deftest]]))
 
 (defcard-rg a-list
   "Lists are the basic elements in any Lisp, ClojureScript no exception. All the source code is just lists, recall."
  (fn [data-atom _] [code-block data-atom])
- (atom {:input "'(1 3 2)  ; The ' is necessary, because otherwise this would try to call a function \"1\" with args 3 and 2" :output nil}))
+ (atom {:input
+"'(1 3 2)  ; The ' is necessary, because otherwise this would
+          ; try to call a function \"1\" with args 3 and 2" :output nil}))
 
 (defcard-rg a-list-2
  (fn [data-atom _] [code-block data-atom])
@@ -29,8 +31,7 @@
  (fn [data-atom _] [code-block data-atom])
  (atom {:input "(conj [1 2 3] 4)" :output nil}))
 
-(defcard-rg wat
-  (fn [_ _] [:div "Ben, what the " [:b "heck"] " is 'conj'? Seems like a load of nonsense."]))
+(defcard-rg why-conj?  (fn [_ _] [img "/img/what.gif"]))
 
 (defcard-rg cons
   "Put something onto the front"

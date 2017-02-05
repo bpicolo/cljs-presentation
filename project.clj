@@ -13,6 +13,7 @@
                  [reagent-utils "0.2.0"]
                  [cljsjs/react "15.3.1-0"]
                  [cljsjs/react-dom "15.3.1-0"]
+                 [cljsjs/codemirror "5.21.0-2"]
                  #_[reagent "0.6.0"]
                  ]
 

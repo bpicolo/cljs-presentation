@@ -7,3 +7,12 @@ p {
     font-size: 24px;
     margin: "20px 0";
 }
+
+.code-block {
+    font-size: 24px;
+}
+
+
+.larger-devcard {
+    width: 100%;
+}

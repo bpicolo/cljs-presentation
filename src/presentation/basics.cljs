@@ -8,15 +8,17 @@
 
 
 (defcard-rg intro
-  "This part of the presentation is designed to be live and interactive. If presentation history tells us anything, everything will go wrong."
+  "A ClojureScript crash course."
  (fn [data-atom _] [code-block data-atom])
  (atom {:input
-"(str \"Feel \" \"free to ask \" \"what would happen if we do <this thing>\")" :output nil :rows 12}))
+"(str \"which is interactive\")" :output nil :rows 12}))
 
 (defcard-rg constructor
   "Calling a function"
  (fn [data-atom _] [code-block data-atom])
- (atom {:input "(odd? 1)  ; Question marks are allowed in names! By convention, this means it should return a boolean." :output nil}))
+ (atom {:input
+"(odd? 1)  ; Question marks are allowed in names! By convention,
+           ; this means it should return a boolean." :output nil}))
 
 (defcard-rg math
   "Lisps use prefix notation for mathematical operators. This does take a little getting used to!"
@@ -26,8 +28,7 @@
 (defcard-rg math-why?
   "Why ruin a good thing like infix notation?"
  (fn [data-atom _] [code-block data-atom])
- (atom {:input "(+ 1 4 5 6)  ; Oh daaaaaang" :output nil}))
-
+ (atom {:input "(+ 1 4 5 6)  ; Oh daaaaaang." :output nil}))
 
 (defcard-rg variables
   "How about defining variables"

@@ -85,7 +85,6 @@
 :output nil
 }))
 
-
 (defcard-rg the-best-operator
   "And don't worry. It is possible to have code run \"in order\""
  (fn [data-atom _] [code-block data-atom])

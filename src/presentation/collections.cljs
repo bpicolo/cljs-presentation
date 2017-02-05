@@ -31,7 +31,7 @@
  (fn [data-atom _] [code-block data-atom])
  (atom {:input "(conj [1 2 3] 4)" :output nil}))
 
-(defcard-rg why-conj?  (fn [_ _] [img "/img/what.gif"]))
+(defcard-rg why-conj?  (fn [_ _] [img "resources/img/what.gif"]))
 
 (defcard-rg cons
   "Put something onto the front"

@@ -69,10 +69,12 @@
                              (reagent/dom-node this)
                              #js {:mode "clojure"
                                   :lineNumbers true
-                                  :tabSize 2})]
+                                  :tabSize 2
+                                  :theme "base16-dark"})]
       (.setSize cm "100%" "740px")
       (.on cm "change" (fn [e]
-                         (swap! state assoc :input (.getValue e)))))))
+                         (swap! state assoc :input (.getValue e))
+                         )))))
 
 (defn component-editor [state]
   (reagent/create-class

@@ -4,6 +4,8 @@ goog.require('cljs.core');
 goog.require('devcards.core');
 goog.require('presentation.basics');
 goog.require('presentation.collections');
+goog.require('presentation.structs');
+goog.require('presentation.zreagent_sandbox');
 cljs.user = ({});
 cljs.core.enable_console_print_BANG_.call(null);
 presentation.core.main = (function presentation$core$main(){

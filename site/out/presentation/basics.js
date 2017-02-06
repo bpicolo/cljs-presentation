@@ -795,3 +795,147 @@ return (new presentation.basics.t_presentation$basics44465(null));
 })()
 ,new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),reagent.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"input","input",556931961),"(-> 2\n    inc\n    inc)",new cljs.core.Keyword(null,"output","output",-1105869043),null], null)),new cljs.core.Keyword(null,"options","options",99638489),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"watch-atom","watch-atom",-2134031308),false], null)], null));
 })], null));
+devcards.core.register_card.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"presentation.basics","presentation.basics",-123245419),new cljs.core.Keyword(null,"the-rarely-used-loop","the-rarely-used-loop",-802183931)], null),new cljs.core.Keyword(null,"func","func",-238706040),(function (){
+return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"the-rarely-used-loop",new cljs.core.Keyword(null,"documentation","documentation",1889593999),"Something different from most languages - Loop constructs",new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){
+if(typeof presentation.basics.t_presentation$basics44468 !== 'undefined'){
+} else {
+
+/**
+* @constructor
+ * @implements {cljs.core.IMeta}
+ * @implements {cljs.core.IWithMeta}
+ * @implements {devcards.core.IDevcardOptions}
+*/
+presentation.basics.t_presentation$basics44468 = (function (meta44469){
+this.meta44469 = meta44469;
+this.cljs$lang$protocol_mask$partition0$ = 393216;
+this.cljs$lang$protocol_mask$partition1$ = 0;
+})
+presentation.basics.t_presentation$basics44468.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_44470,meta44469__$1){
+var self__ = this;
+var _44470__$1 = this;
+return (new presentation.basics.t_presentation$basics44468(meta44469__$1));
+});
+
+presentation.basics.t_presentation$basics44468.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_44470){
+var self__ = this;
+var _44470__$1 = this;
+return self__.meta44469;
+});
+
+presentation.basics.t_presentation$basics44468.prototype.devcards$core$IDevcardOptions$ = true;
+
+presentation.basics.t_presentation$basics44468.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__44275__auto__,devcard_opts__44276__auto__){
+var self__ = this;
+var this__44275__auto____$1 = this;
+return cljs.core.assoc.call(null,devcard_opts__44276__auto__,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var v__44294__auto__ = ((function (this__44275__auto____$1){
+return (function (data_atom,_){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [presentation.utils.code_block,data_atom], null);
+});})(this__44275__auto____$1))
+;
+if(cljs.core.fn_QMARK_.call(null,v__44294__auto__)){
+return ((function (v__44294__auto__,this__44275__auto____$1){
+return (function (data_atom__44295__auto__,owner__44296__auto__){
+return reagent.core.as_element.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [v__44294__auto__,data_atom__44295__auto__,owner__44296__auto__], null));
+});
+;})(v__44294__auto__,this__44275__auto____$1))
+} else {
+return reagent.core.as_element.call(null,v__44294__auto__);
+}
+})(),new cljs.core.Keyword(null,"options","options",99638489),cljs.core.merge.call(null,cljs.core.PersistentArrayMap.EMPTY,devcards.core.assert_options_map.call(null,new cljs.core.Keyword(null,"options","options",99638489).cljs$core$IFn$_invoke$arity$1(devcard_opts__44276__auto__))));
+});
+
+presentation.basics.t_presentation$basics44468.getBasis = (function (){
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta44469","meta44469",-588366480,null)], null);
+});
+
+presentation.basics.t_presentation$basics44468.cljs$lang$type = true;
+
+presentation.basics.t_presentation$basics44468.cljs$lang$ctorStr = "presentation.basics/t_presentation$basics44468";
+
+presentation.basics.t_presentation$basics44468.cljs$lang$ctorPrWriter = (function (this__25657__auto__,writer__25658__auto__,opt__25659__auto__){
+return cljs.core._write.call(null,writer__25658__auto__,"presentation.basics/t_presentation$basics44468");
+});
+
+presentation.basics.__GT_t_presentation$basics44468 = (function presentation$basics$__GT_t_presentation$basics44468(meta44469){
+return (new presentation.basics.t_presentation$basics44468(meta44469));
+});
+
+}
+
+return (new presentation.basics.t_presentation$basics44468(null));
+})()
+,new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),reagent.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"input","input",556931961),"(loop [n 1]\n  (if (< n 10)\n    (recur (+ n 1))\n    n))",new cljs.core.Keyword(null,"output","output",-1105869043),null], null)),new cljs.core.Keyword(null,"options","options",99638489),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"watch-atom","watch-atom",-2134031308),false], null)], null));
+})], null));
+devcards.core.register_card.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"presentation.basics","presentation.basics",-123245419),new cljs.core.Keyword(null,"comprehensions","comprehensions",1977745828)], null),new cljs.core.Keyword(null,"func","func",-238706040),(function (){
+return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"comprehensions",new cljs.core.Keyword(null,"documentation","documentation",1889593999),"Comprehensions serve as another alternative loop construct.",new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){
+if(typeof presentation.basics.t_presentation$basics44471 !== 'undefined'){
+} else {
+
+/**
+* @constructor
+ * @implements {cljs.core.IMeta}
+ * @implements {cljs.core.IWithMeta}
+ * @implements {devcards.core.IDevcardOptions}
+*/
+presentation.basics.t_presentation$basics44471 = (function (meta44472){
+this.meta44472 = meta44472;
+this.cljs$lang$protocol_mask$partition0$ = 393216;
+this.cljs$lang$protocol_mask$partition1$ = 0;
+})
+presentation.basics.t_presentation$basics44471.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_44473,meta44472__$1){
+var self__ = this;
+var _44473__$1 = this;
+return (new presentation.basics.t_presentation$basics44471(meta44472__$1));
+});
+
+presentation.basics.t_presentation$basics44471.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_44473){
+var self__ = this;
+var _44473__$1 = this;
+return self__.meta44472;
+});
+
+presentation.basics.t_presentation$basics44471.prototype.devcards$core$IDevcardOptions$ = true;
+
+presentation.basics.t_presentation$basics44471.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__44275__auto__,devcard_opts__44276__auto__){
+var self__ = this;
+var this__44275__auto____$1 = this;
+return cljs.core.assoc.call(null,devcard_opts__44276__auto__,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var v__44294__auto__ = ((function (this__44275__auto____$1){
+return (function (data_atom,_){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [presentation.utils.code_block,data_atom], null);
+});})(this__44275__auto____$1))
+;
+if(cljs.core.fn_QMARK_.call(null,v__44294__auto__)){
+return ((function (v__44294__auto__,this__44275__auto____$1){
+return (function (data_atom__44295__auto__,owner__44296__auto__){
+return reagent.core.as_element.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [v__44294__auto__,data_atom__44295__auto__,owner__44296__auto__], null));
+});
+;})(v__44294__auto__,this__44275__auto____$1))
+} else {
+return reagent.core.as_element.call(null,v__44294__auto__);
+}
+})(),new cljs.core.Keyword(null,"options","options",99638489),cljs.core.merge.call(null,cljs.core.PersistentArrayMap.EMPTY,devcards.core.assert_options_map.call(null,new cljs.core.Keyword(null,"options","options",99638489).cljs$core$IFn$_invoke$arity$1(devcard_opts__44276__auto__))));
+});
+
+presentation.basics.t_presentation$basics44471.getBasis = (function (){
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta44472","meta44472",-2018941350,null)], null);
+});
+
+presentation.basics.t_presentation$basics44471.cljs$lang$type = true;
+
+presentation.basics.t_presentation$basics44471.cljs$lang$ctorStr = "presentation.basics/t_presentation$basics44471";
+
+presentation.basics.t_presentation$basics44471.cljs$lang$ctorPrWriter = (function (this__25657__auto__,writer__25658__auto__,opt__25659__auto__){
+return cljs.core._write.call(null,writer__25658__auto__,"presentation.basics/t_presentation$basics44471");
+});
+
+presentation.basics.__GT_t_presentation$basics44471 = (function presentation$basics$__GT_t_presentation$basics44471(meta44472){
+return (new presentation.basics.t_presentation$basics44471(meta44472));
+});
+
+}
+
+return (new presentation.basics.t_presentation$basics44471(null));
+})()
+,new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),reagent.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"input","input",556931961),"(for [x (range 3 7)]\n  (* x x))",new cljs.core.Keyword(null,"output","output",-1105869043),null], null)),new cljs.core.Keyword(null,"options","options",99638489),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"watch-atom","watch-atom",-2134031308),false], null)], null));
+})], null));

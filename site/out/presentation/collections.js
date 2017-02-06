@@ -398,7 +398,7 @@ var self__ = this;
 var this__44275__auto____$1 = this;
 return cljs.core.assoc.call(null,devcard_opts__44276__auto__,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var v__44294__auto__ = ((function (this__44275__auto____$1){
 return (function (_,___$1){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [presentation.utils.img,"/img/what.gif"], null);
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [presentation.utils.img,"resources/public/img/what.gif"], null);
 });})(this__44275__auto____$1))
 ;
 if(cljs.core.fn_QMARK_.call(null,v__44294__auto__)){

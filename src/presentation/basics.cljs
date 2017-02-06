@@ -94,3 +94,24 @@
     inc)"
 :output nil
 }))
+
+(defcard-rg the-rarely-used-loop
+  "Something different from most languages - Loop constructs"
+ (fn [data-atom _] [code-block data-atom])
+ (atom {:input
+"(loop [n 1]
+  (if (< n 10)
+    (recur (+ n 1))
+    n))"
+:output nil
+}))
+
+
+(defcard-rg comprehensions
+  "Comprehensions serve as another alternative loop construct."
+ (fn [data-atom _] [code-block data-atom])
+ (atom {:input
+"(for [x (range 3 7)]
+  (* x x))"
+:output nil
+}))

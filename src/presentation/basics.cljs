@@ -21,14 +21,11 @@
            ; this means it should return a boolean." :output nil}))
 
 (defcard-rg math
-  "Lisps use prefix notation for mathematical operators. This does take a little getting used to!"
+  "Lisps use prefix notation for mathematical functions.
+  This does take a little getting used to!"
  (fn [data-atom _] [code-block data-atom])
  (atom {:input "(+ 1 4)" :output nil}))
 
-(defcard-rg math-why?
-  "Why ruin a good thing like infix notation?"
- (fn [data-atom _] [code-block data-atom])
- (atom {:input "(+ 1 4 5 6)  ; Oh daaaaaang." :output nil}))
 
 (defcard-rg variables
   "How about defining variables"
@@ -49,34 +46,18 @@
 :output nil
 }))
 
-(defcard-rg variables-lex2
-  "Are we sure?"
- (fn [data-atom _] [code-block data-atom])
- (atom {:input
-"(let [lexical 6])
-(* lexical 3)"
-:output nil
-}))
-
 (defcard-rg variables-function
   "Defining a function"
  (fn [data-atom _] [code-block data-atom])
  (atom {:input
-"(defn multiply-by-two [number] (* 2 number))
+"(defn multiply-by-two [number]
+   (* 2 number))
 (multiply-by-two 17)"
 :output nil
 }))
 
-(defcard-rg variables-function
-  "Defining an anonymous function"
- (fn [data-atom _] [code-block data-atom])
- (atom {:input
-"((fn [number] (* 2 number)) 4)"
-:output nil
-}))
-
 (defcard-rg control-structures
-  "Good old if is here for you"
+  "Good old if is here for you for control flow"
  (fn [data-atom _] [code-block data-atom])
  (atom {:input
 "(if (> 0 5)
@@ -85,8 +66,19 @@
 :output nil
 }))
 
-(defcard-rg the-best-operator
-  "And don't worry. It is possible to have code run \"in order\""
+(defcard-rg control-structures
+  "As you might have noticed, lisp code is built outward usually, a bit different
+  from other languages"
+ (fn [data-atom _] [code-block data-atom])
+ (atom {:input
+"(inc
+  (inc 2))"
+:output nil
+}))
+
+
+(defcard-rg the-best-macro
+  "But it is possible to flip this around with the -> macro"
  (fn [data-atom _] [code-block data-atom])
  (atom {:input
 "(-> 2

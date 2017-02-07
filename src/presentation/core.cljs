@@ -3,7 +3,6 @@
     [devcards.core]
     [presentation.basics]
     [presentation.collections]
-    [presentation.structs]
     [presentation.zreagent-sandbox]))
 
 (set! (. js/cljs -user) #js {})
